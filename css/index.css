@@ -1,0 +1,702 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* header 구역 */
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 160px;
+    z-index: 1000;
+}
+
+#header .logo {
+    width: 40%;
+    float: left;
+    margin-top: 25px;
+}
+
+#header #nav {
+    width: 60%;
+    float: right;
+    margin: 50px 0 0 0;
+    font-size: 16px;
+}
+
+#header #nav .menu>li {
+    float: left;
+    padding: 0 70px 0 0;
+}
+
+#header #nav .menu>li>a {
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    transition: all 0.5s;
+}
+
+#header #nav .menu>li.on>a {
+    color: #e9cfff;
+
+}
+
+#header #nav .menu>li>a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 20px;
+    height: 3px;
+    background: #e9cfff;
+    transition: all 0.5s;
+}
+
+#header #nav .menu>li.on>a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20px;
+    height: 3px;
+    background: #e9cfff;
+}
+
+/* section 구역 */
+
+.section {
+    height: 100vh;
+    position: relative;
+}
+
+/* 첫번째 박스 */
+
+#intro .intro-box {
+    position: absolute;
+    background: #f4f4f4;
+    width: 100%;
+    height: 800px;
+    transform: skewY(165deg);
+    top: -330px;
+    overflow: hidden;
+}
+
+#intro .intro-box img {
+    position: absolute;
+    left: 450px;
+    top: 385px;
+    width: 470px;
+    height: 470px;
+    transform: skewY(-165deg);
+}
+
+#intro .tex-box1 {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+}
+
+#intro .tex-box1::before {
+    content: '';
+    width: 50px;
+    height: 5px;
+    background: #000;
+    position: absolute;
+    top: -20px;
+    right: 0;
+}
+
+#intro .tex-box1 .main_1 {
+    font-size: 60px;
+    color: #e9cfff;
+    text-align: right;
+}
+
+#intro .tex-box1 .sub_1 {
+    font-size: 90px;
+    text-align: right;
+}
+
+#intro .tex-box1 .maintxt_1 {
+    padding-top: 30px;
+    font-size: 16px;
+    text-align: right;
+}
+
+#intro .tex-box1 .subtxt_1 {
+    padding-top: 15px;
+    font-size: 13px;
+    text-align: right;
+}
+
+/* 두번째 박스 */
+
+#about {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+#about .tex-box2 {
+    text-align: left;
+    padding-top: 250px;
+}
+
+#about .tex-box2 .box1 .ab::before {
+    content: '';
+    width: 50px;
+    height: 5px;
+    background: #000;
+    position: absolute;
+    top: -20px;
+    left: 0;
+}
+
+#about .tex-box2 .box1 {
+    float: left;
+    padding: 0 0 0 60px;
+    width: 50%;
+}
+
+#about .tex-box2 .box1 .ab {
+    font-size: 70px;
+    font-weight: bold;
+    color: #e9cfff;
+    position: relative;
+}
+
+#about .tex-box2 .box1 .me {
+    font-size: 70px;
+    font-weight: bold;
+    color: #000;
+}
+
+#about .tex-box2 .box1 .abme-txt {
+    padding-top: 70px;
+    color: #222;
+}
+
+#about .tex-box2 .box1 .abme-txt .hi {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#about .tex-box2 .box1 .abme-txt strong {
+    color: #e9cfff;;
+    font-size: 20px;
+    padding-bottom: 20px;
+    letter-spacing: 4px;
+}
+
+#about .tex-box2 .box1 .abme-txt p {
+    font-size: 17px;
+    padding: 20px 0 0 0;
+    letter-spacing: -1px;
+}
+
+#about .tex-box2 .box2 {
+    float: right;
+    width: 50%;
+}
+
+#about .tex-box2 .box2 .edu {
+    float: left;
+    padding-right: 50px;
+}
+
+#about .tex-box2 .box2 .lic {
+    float: left;
+}
+
+#about .tex-box2 .box2 h3 {
+    font-size: 30px;
+    padding: 25px 0 25px 0;
+}
+
+#about .tex-box2 .box2 p {
+    font-size: 16px;
+    padding: 5px 0 5px 0;
+}
+
+#about .tex-box2 .box2 span {
+    font-size: 15px;
+    color: #d9affc;
+}
+
+#about .tex-box2 .box2 .graphBox {
+    padding-left: 80px;
+}
+
+#about .tex-box2 .box2 .graphBox .score {
+    width:90%; 
+    height:29px; 
+    background: #e9cfff;
+    border-radius: 50px; 
+    margin: 5px;
+    position: relative;
+}
+
+#about .tex-box2 .box2 .graphBox .score p {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    padding-right: 5px;
+}
+
+#about .tex-box2 .box2 .graphBox .score .myscore {
+    width: 0%;
+    height: 100%;
+    background: #222;
+    border-radius: 50px 0 0 50px;
+    color: #fff;
+    text-align: left;
+    padding-left: 1.2em;
+    line-height: 29px;
+}
+
+#about .tex-box2 .box2 h3 img {
+    padding: 5px 5px 5px 0;
+}
+
+/* 세번째 박스 */
+
+#web {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+#web .tex-box3 {
+    text-align: left;
+    padding-top: 250px;
+}
+
+#web .tex-box3 .box3 .ab::before {
+    content: '';
+    width: 50px;
+    height: 5px;
+    background: #000;
+    position: absolute;
+    top: -20px;
+    left: 0;
+}
+
+#web .tex-box3 .box3 {
+    float: left;
+    padding: 0 0 0 60px;
+}
+
+#web .tex-box3 .box3 .ab {
+    font-size: 70px;
+    font-weight: bold;
+    color: #e9cfff;
+    position: relative;
+}
+
+#web .tex-box3 .box3 .me {
+    font-size: 70px;
+    font-weight: bold;
+    color: #000;
+}
+
+#web .tex-box3 .box3 h3 {
+    font-size: 22px;
+    padding-bottom: 15px;
+}
+
+#web .tex-box3 .box3 p {
+    letter-spacing: -1px;
+    color: #666666;
+    font-size: 15px;
+    position: relative;
+    z-index: 99999;
+}
+
+#web .tex-box3 .box3 .color-box {
+    width: 1200px;
+    height: 300px;
+    margin-top: -40px;
+    background-image: url(../image/gongcha_ipad.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+#web .tex-box3 .box3 .color-box::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0);
+    transition: all 0.5s;
+    z-index: 999;
+}
+
+#web .tex-box3 .box3:hover .color-box::before {
+    background: rgba(0,0,0,0.4);
+}
+
+#web .tex-box3 .box3 .color-box .color-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    padding: 12px 30px;
+    background: rgba(0,0,0,0.7);
+    opacity: 0;
+    transition: all 0.5s;
+    z-index: 9999;
+}
+
+#web .tex-box3 .box3 .color-box .color-btn a {
+    font-size: 14px;
+}
+
+#web .tex-box3 .box3:hover .color-box .color-btn {
+    opacity: 1;
+}
+
+#web .tex-box3 .box3 .gong-main {
+    float: left;
+    padding: 20px 100px 0 0;
+}
+
+#web .tex-box3 .box3 .gong-main .font {
+    font-size: 35px;
+}
+
+#web .tex-box3 .box3 .gong-main .font2 {
+    font-size: 22px;
+    color: #000;
+}
+
+#web .tex-box3 .box3 .gong-sub {
+    float: left;
+    padding: 20px 100px 0 0;
+}
+
+#web .tex-box3 .box3 .gong-sub h3 {
+    padding-bottom: 10px;
+}
+
+#web .tex-box3 .box3 .gong-sub span {
+    font-size: 16px;
+    color: #d9affc;
+}
+
+#web .tex-box3 .box3 .gong-sub p {
+    padding-top: 10px;
+}
+
+#web .tex-box3 .box3 .gong-sub-last {
+    float: left;
+    padding-top: 20px;
+}
+
+#web .tex-box3 .box3 h3 img {
+    padding: 0 5px 2px 0 ;
+}
+
+/* 네번째 박스 */
+
+#photo {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+#photo .web-box {
+    width: 100%;
+    height: 450px;
+    background: #f4f4f4;
+}
+
+#photo .tex-box4 {
+    text-align: left;
+    margin-top: -200px;
+    position: relative;
+    padding: 0 0 0 60px;
+}
+
+#photo .tex-box4 .box4 {
+    float: left;
+    padding-right: 290px;
+    width: 50%;
+}
+
+#photo .tex-box4 .box4 .ab {
+    font-size: 70px;
+    font-weight: bold;
+    color: #e9cfff;
+    position: relative;
+}
+
+#photo .tex-box4 .box4 .ab::before {
+    content: '';
+    width: 50px;
+    height: 5px;
+    background: #000;
+    position: absolute;
+    top: -20px;
+    left: 0;
+}
+
+#photo .tex-box4 .box4 .me {
+    font-size: 70px;
+    font-weight: bold;
+    color: #000;
+}
+
+#photo .tex-box4 .image-box {
+    width: 50%;
+    float: left;
+}
+
+#photo .tex-box4 .image-box li {
+    float: left;
+    width: 30%;
+    position: relative;
+    margin: 0 1% 1% 0;
+    height: 140px;
+    background: #222;
+    overflow: hidden;
+}
+
+#photo .tex-box4 .image-box li a { 
+    transition: 0.5s ease;
+}
+
+#photo .tex-box4 .image-box li img {
+    filter: grayscale(0.8) opacity(0.3); 
+    max-width: none; 
+    transition: 0.5s ease;
+}
+
+#photo .tex-box4 .image-box li span {
+    position: absolute; 
+    display: inline-block; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: #e9cfff; 
+    font-size: 60px; 
+    opacity: 0; 
+    transition: 0.5s ease;
+}
+
+#photo .tex-box4 .image-box li a:hover img {
+    filter: grayscale(0.2) opacity(0.9);
+}
+
+#photo .tex-box4 .image-box li a:hover span {
+    opacity: 1; 
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+#photo .tex-box4 .image-main {
+    width: 100%;
+    float: left;
+    margin-top: -135px;
+}
+
+#photo .tex-box4 .image-main h3 {
+    font-size: 22px;
+    padding-bottom: 15px;
+}
+
+#photo .tex-box4 .image-main span {
+    font-size: 16px;
+    color: #d9affc;
+}
+
+#photo .tex-box4 .image-main p {
+    padding-top: 10px;
+    letter-spacing: -1px;
+    color: #666666;
+    font-size: 15px;
+}
+
+#photo .tex-box4 .image-main h3 img {
+    padding: 0 5px 2px 0 ;
+}
+
+/* 다섯번째 박스 */
+
+#cont {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+#cont .tex-box5 {
+    text-align: left;
+    padding-top: 250px;
+    float: left;
+}
+
+#cont .tex-box5 .box5 {
+    float: left;
+    padding: 0 0 0 60px;
+}
+
+#cont .tex-box5 .box5 .ab {
+    font-size: 70px;
+    font-weight: bold;
+    color: #e9cfff;
+    position: relative;
+}
+
+#cont .tex-box5 .box5 .ab::before {
+    content: '';
+    width: 50px;
+    height: 5px;
+    background: #000;
+    position: absolute;
+    top: -20px;
+    left: 0;
+}
+
+#cont .tex-box5 .box5 .me {
+    font-size: 70px;
+    font-weight: bold;
+    color: #000;
+}
+
+#cont .form-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 170px;
+    float: left;
+}
+
+#cont .form-box form {
+    width: 540px;
+    background: #e9cfff;
+    border-radius: 50px;
+    padding: 50px;
+    height: 400px;
+}
+
+#cont col:nth-child(1) {
+    width: 20%;
+}
+
+#cont col:nth-child(2) {
+    width: auto;
+}
+
+#cont .form-box input {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+#cont .form-box textarea {
+    width: 100%;
+    height: 100px;
+    border: none;
+    border-radius: 10px;
+}
+
+#cont .form-box td {
+    padding: 5px;
+}
+
+#cont .form-box label {
+    font-size: 14px;
+}
+
+#cont .form-box .btn {
+    text-align: center;
+}
+
+#cont .form-box .btn button {
+    border: none;
+    padding: 5px 15px;
+    background: #000;
+    border-radius: 5px;
+    color: #fff;
+}
+
+#cont .form-box .btn input {
+    border: none;
+    padding: 5px 15px;
+    background: #000;
+    color: #fff;
+    border-radius: 5px;
+    width: auto;
+}
+
+#cont .form-box .thankyou_message {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 12px;
+}
+
+#cont .mas {
+    margin: -215px 0 0 40px;
+    float: left;
+}
+
+/* footer 구역 */
+
+#footer {
+    float: left;
+    width: 100%;
+    height: 150px;
+    background: #222;
+    margin-top: -150px;
+}
+
+#footer .foot-txt h2 {
+    float: left;
+    padding-top: 55px;
+
+}
+
+#footer .foot-txt .foot-txt-sub {
+    padding-top: 70px;
+    text-align: center;
+}
+
+#footer .foot-txt .foot-txt-sub span {
+    font-size: 14px;
+    color: #fff;
+    padding: 0 12px 0 15px;
+    position: relative;
+}
+
+#footer .foot-txt .foot-txt-sub span::before {
+    content: '';
+    position: absolute;
+    height: 12px;
+    width: 1px;
+    background: #fff;
+    top: 0;
+    left: 0;
+    margin-top: 3px;
+}
+
+#footer .foot-txt .foot-txt-sub span:nth-child(1)::before{
+    display: none;
+}
