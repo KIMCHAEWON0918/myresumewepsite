@@ -16,10 +16,25 @@ ul, li {
 .inner {
     max-width: 1200px;
     margin: 0 auto;
+    padding:0 10px 
 }
 
 .cf::after, .cf::before {
     content: '';
     display: block;
     clear: both;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.blind { 
+    position:absolute; 
+    width:1px; 
+    height:1px; 
+    font-size:0px;
+    line-height:0;
+    overflow:hidden;
+    text-indent:-9999px;
 }

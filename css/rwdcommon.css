@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+@media screen and (max-width:1450px) {
+
+    .button {
+        position: fixed;
+        z-index: 9999999999999;
+        left: 5%;
+        top: 40%;
+    }
+
+    .button > div {
+        width: 15px;
+        margin: 25px 0;
+    }
+    
+    .button > div > a {
+        display: block;
+        width: 100%;
+        height: 15px;
+        border-radius: 50px;
+        background: #d9affc;
+        transition: all 0.5s;
+    }
+    
+    .button > div.on > a {
+        background: #c685fd;
+        height: 30px;
+    }
+
+}
+
+@media screen and (max-width:1250px) {
+
+    .button {
+        position: fixed;
+        z-index: 9999999999999;
+        left: 2%;
+        top: 40%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+
+    #header .inner {
+        position: relative;
+    }
+
+    #header .opennav { 
+        display:block;
+        position:absolute; 
+        top:30%; 
+        right:30px; 
+        font-size:35px; 
+        transform:translateY(-30%); 
+        padding-top: 50px;
+    }
+
+    #header #nav {
+        float: none;
+        margin: 0 0 0 0;
+        font-size: 16px;
+        position:fixed; 
+        top:0; 
+        transform:translateY(0%);
+        right:-200px;
+        width:200px;
+        bottom:0;
+        background:#fff;
+        padding-top:50px;
+        transition:all 0.3s;
+        overflow-y:auto;
+    }
+
+    #header #nav.on {
+        right:0; 
+    }
+
+    #header #nav .menu {
+        margin-top: 40px;
+    }
+    
+    #header #nav .menu>li {
+        float: none;
+        padding: 0 0 0 0;
+    }
+    
+    #header #nav .menu>li>a {
+        font-size: 14px;
+        font-weight: 700;
+        text-align: center;
+        display: block;
+        position: relative;
+        transition: all 0.5s;
+        line-height: 50px;
+    }
+    
+    #header #nav .menu>li.on>a {
+        color: #fff;
+    }
+
+    #header #nav .menu>li>a::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        top: 0;
+        height: 50px;
+        background: #e9cfff;
+        transition: all 0.5s;
+    }
+    
+    #header #nav .menu>li.on>a::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 50px;
+        background: #e9cfff;
+        z-index: -1;
+    }
+    
+    .button {
+        position: fixed;
+        z-index: 999;
+        left: 2%;
+        top: 40%;
+    }
+    
+}
+
+@media screen and (max-width:1135px) {
+
+    .button {
+        display: none;
+    }
+    
+}

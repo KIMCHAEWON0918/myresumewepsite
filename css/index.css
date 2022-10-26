@@ -2,72 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-body {
-    font-family: 'Montserrat', sans-serif;
-}
-
-/* header 구역 */
-
-#header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 160px;
-    z-index: 1000;
-}
-
-#header .logo {
-    width: 40%;
-    float: left;
-    margin-top: 25px;
-}
-
-#header #nav {
-    width: 60%;
-    float: right;
-    margin: 50px 0 0 0;
-    font-size: 16px;
-}
-
-#header #nav .menu>li {
-    float: left;
-    padding: 0 70px 0 0;
-}
-
-#header #nav .menu>li>a {
-    font-size: 14px;
-    font-weight: 700;
-    position: relative;
-    transition: all 0.5s;
-}
-
-#header #nav .menu>li.on>a {
-    color: #e9cfff;
-
-}
-
-#header #nav .menu>li>a::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    right: 50%;
-    top: 20px;
-    height: 3px;
-    background: #e9cfff;
-    transition: all 0.5s;
-}
-
-#header #nav .menu>li.on>a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 20px;
-    height: 3px;
-    background: #e9cfff;
-}
-
 /* section 구역 */
 
 .section {
@@ -139,7 +73,7 @@ body {
 
 #about {
     width: 100%;
-    height: 100vh;
+    height: auto;
     overflow: hidden;
     position: relative;
 }
@@ -161,7 +95,7 @@ body {
 
 #about .tex-box2 .box1 {
     float: left;
-    padding: 0 0 0 60px;
+    padding: 0 0 0 30px;
     width: 50%;
 }
 
@@ -202,13 +136,14 @@ body {
 }
 
 #about .tex-box2 .box2 {
-    float: right;
+    float: left;
     width: 50%;
 }
 
+
 #about .tex-box2 .box2 .edu {
     float: left;
-    padding-right: 50px;
+    padding-right: 30px;
 }
 
 #about .tex-box2 .box2 .lic {
@@ -269,14 +204,14 @@ body {
 
 #web {
     width: 100%;
-    height: 100vh;
+    height: auto;
     overflow: hidden;
     position: relative;
 }
 
 #web .tex-box3 {
     text-align: left;
-    padding-top: 250px;
+    padding: 250px 0;
 }
 
 #web .tex-box3 .box3 .ab::before {
@@ -413,7 +348,7 @@ body {
 
 #photo {
     width: 100%;
-    height: 100vh;
+    height: auto;
     overflow: hidden;
     position: relative;
 }
@@ -426,9 +361,11 @@ body {
 
 #photo .tex-box4 {
     text-align: left;
-    margin-top: -200px;
+    margin-top: -400px;
     position: relative;
-    padding: 0 0 0 60px;
+    padding-top: 250px;
+    padding-left: 60px;
+    padding-bottom: 250px;
 }
 
 #photo .tex-box4 .box4 {
@@ -469,7 +406,7 @@ body {
     float: left;
     width: 30%;
     position: relative;
-    margin: 0 1% 1% 0;
+    margin: 0 3px 3px 0;
     height: 140px;
     background: #222;
     overflow: hidden;
@@ -537,18 +474,18 @@ body {
 
 #cont {
     width: 100%;
-    height: 100vh;
+    height: auto;
     overflow: hidden;
     position: relative;
-    display: flex;
+    /* display: flex;
     flex-flow: column;
-    justify-content: space-between;
+    justify-content: space-between; */
 }
 
 #cont .tex-box5 {
     text-align: left;
-    padding-top: 250px;
-    float: left;
+    padding: 250px 0;
+    position: relative;
 }
 
 #cont .tex-box5 .box5 {
@@ -580,11 +517,11 @@ body {
 }
 
 #cont .form-box {
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     padding-left: 170px;
-    float: left;
+    float: right;
 }
 
 #cont .form-box form {
@@ -654,49 +591,7 @@ body {
 }
 
 #cont .mas {
-    margin: -215px 0 0 40px;
-    float: left;
-}
-
-/* footer 구역 */
-
-#footer {
-    float: left;
-    width: 100%;
-    height: 150px;
-    background: #222;
-    margin-top: -150px;
-}
-
-#footer .foot-txt h2 {
-    float: left;
-    padding-top: 55px;
-
-}
-
-#footer .foot-txt .foot-txt-sub {
-    padding-top: 70px;
-    text-align: center;
-}
-
-#footer .foot-txt .foot-txt-sub span {
-    font-size: 14px;
-    color: #fff;
-    padding: 0 12px 0 15px;
-    position: relative;
-}
-
-#footer .foot-txt .foot-txt-sub span::before {
-    content: '';
     position: absolute;
-    height: 12px;
-    width: 1px;
-    background: #fff;
-    top: 0;
-    left: 0;
-    margin-top: 3px;
-}
-
-#footer .foot-txt .foot-txt-sub span:nth-child(1)::before{
-    display: none;
+    top: 430px;
+    left: 60px;
 }

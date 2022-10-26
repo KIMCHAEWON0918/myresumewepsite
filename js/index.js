@@ -1,20 +1,3 @@
-// 네비게이션 설정
-
-$('#nav .menu li a').on('click', function(){
-    let lino = $(this).parent().index()
-    let sectdist = $('section').eq(lino).offset().top
-    $('html, body').animate({
-        scrollTop:sectdist
-    }, 500)
-    return false
-})
-
-$('#nav .menu li').on('click', function(){
-    $(this).addClass('on').siblings().removeClass('on')
-})
-
-
-
 // 그래프 설정
 
 function graph(jumsu, cname, time) {
@@ -53,12 +36,14 @@ $(window).on('scroll', function(){
     let sct = $(this).scrollTop()
     if ( sct>=0 && sct<sect2 ) {
         $('#nav .menu li').eq(0).addClass('on').siblings().removeClass('on')
+        $('.button > div').eq(0).addClass('on').siblings().removeClass('on')
         $('.myscore').css({
             width:'0%'
         })
         $('#about').removeClass('on')
     } else if ( sct>=sect2 && sct<sect3 ) {
         $('#nav .menu li').eq(1).addClass('on').siblings().removeClass('on')
+        $('.button > div').eq(1).addClass('on').siblings().removeClass('on')
         if ( !$('#about').hasClass('on') ) {
             $('#about').addClass('on')
             graph(90, '.photo', 15)
@@ -70,10 +55,13 @@ $(window).on('scroll', function(){
         }
     } else if ( sct>=sect3 && sct<sect4 ) {
         $('#nav .menu li').eq(2).addClass('on').siblings().removeClass('on')
+        $('.button > div').eq(2).addClass('on').siblings().removeClass('on')
     } else if ( sct>=sect4 && sct<sect5 ) {
         $('#nav .menu li').eq(3).addClass('on').siblings().removeClass('on')
+        $('.button > div').eq(3).addClass('on').siblings().removeClass('on')
     } else if ( sct>=sect5 ) {
         $('#nav .menu li').eq(4).addClass('on').siblings().removeClass('on')
+        $('.button > div').eq(4).addClass('on').siblings().removeClass('on')
     }
 })
 
