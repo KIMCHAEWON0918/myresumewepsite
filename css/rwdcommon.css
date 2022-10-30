@@ -164,10 +164,10 @@
 @media screen and (max-width:810px) {
 
     #footer .foot-txt h2 {
-        /* padding : 40px 0 20px 0->55px 0 변경 */
+        /* padding : 40px 0 20px 0->55px 0 0 0 변경 */
         width: 100%;
         float: left;
-        padding: 55px 0;
+        padding: 55px 0 0 0;
         text-align: center;
     }
 
