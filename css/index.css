@@ -140,7 +140,6 @@
     width: 50%;
 }
 
-
 #about .tex-box2 .box2 .edu {
     float: left;
     padding-right: 30px;
@@ -319,7 +318,7 @@
 
 #web .tex-box3 .box3 .gong-sub {
     float: left;
-    padding: 20px 100px 0 0;
+    padding: 20px 0 0 0;
 }
 
 #web .tex-box3 .box3 .gong-sub h3 {
@@ -337,7 +336,7 @@
 
 #web .tex-box3 .box3 .gong-sub-last {
     float: left;
-    padding-top: 20px;
+    padding: 20px 0 0 100px;
 }
 
 #web .tex-box3 .box3 h3 img {
@@ -406,7 +405,7 @@
     float: left;
     width: 30%;
     position: relative;
-    margin: 0 3px 3px 0;
+    margin: 0 2px 2px 0;
     height: 140px;
     background: #222;
     overflow: hidden;

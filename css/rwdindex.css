@@ -125,10 +125,11 @@
     
     #about .tex-box2 .box1 {
         /* float center->none 변경
-        padding 왼쪽 정렬 30px->60px 변경 */
+        padding 왼쪽 정렬 30px->60px 변경
+        width 50%->100% 변경 */
         float: none;
         padding: 0 0 0 60px;
-        width: 50%;
+        width: 100%;
     }
     
     #about .tex-box2 .box1 .ab {
@@ -254,19 +255,20 @@
     #web .tex-box3 .box3 .gong-main {
         /* float left->none 변경 */
         float: none;
-        padding: 20px 100px 0 0;
+        padding: 20px 0 0 0;
     }
 
     #web .tex-box3 .box3 .gong-sub {
         /* float left->none 변경 */
         float: none;
-        padding: 20px 100px 0 0;
+        padding: 20px 0 0 0;
     }
 
     #web .tex-box3 .box3 .gong-sub-last {
-        /* float left->none 변경 */
+        /* float left->none 변경
+        padding 100px->0 변경 */
         float: none;
-        padding-top: 20px;
+        padding: 20px 0 0 0;
     }
 
     /* 네번째 박스 */
@@ -311,6 +313,13 @@
         margin-top: 50px;
     }
 
+    #photo .tex-box4 .image-main p {
+        padding-top: 10px;
+        letter-spacing: -1px;
+        color: #666666;
+        font-size: 14px;
+    }
+
     /* 다섯번째 박스 */
 
     #cont {
@@ -351,10 +360,56 @@
     }
 
     #cont .mas {
-        /* top 430px->740px 변경 */
+        /* top 430px->740px 변경
+        display : none 추가 */
         position: absolute;
         top: 740px;
         left: 60px;
+        display: none;
     }
 
+}
+
+@media screen and (max-width:650px) {
+
+    #web .tex-box3 .box3 .color-box {
+        /* width 574px->300px 변경
+        background-image 변경 */
+        width: 300px;
+        height: 300px;
+        margin-top: -40px;
+        background-image: url(../image/gongcha_ipad3.jpg);
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+    }
+
+    #web .tex-box3 .box3 .color-box .color-btn a {
+        font-size: 12px;
+    }
+
+    #cont .form-box form {
+        /* width 540px->350px 변경
+        padding 50px->30px 변경 */
+        width: 400px;
+        background: #e9cfff;
+        border-radius: 50px;
+        padding: 30px;
+        height: 400px;
+    }
+
+    #cont .form-box input {
+        /* padding 10px->none 변경 */
+        width: 100%;
+        height: 30px;
+        padding: none;
+        border: none;
+        border-radius: 10px;
+    }
+
+    #cont .form-box label {
+        /* font-size 14px->11px 변경 */
+        font-size: 11px;
+    }
 }
